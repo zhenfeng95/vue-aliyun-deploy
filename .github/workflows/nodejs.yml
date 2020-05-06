@@ -33,7 +33,6 @@ jobs:
       uses: easingthemes/ssh-deploy@v2.1.2
       env:
         SSH_PRIVATE_KEY: ${{ secrets.ALIYUN }}
-        ARGS: "-r1tgoDzvO --delete"
         SOURCE: "dist/"
         REMOTE_HOST: "39.102.68.192"
         REMOTE_USER: "root"
