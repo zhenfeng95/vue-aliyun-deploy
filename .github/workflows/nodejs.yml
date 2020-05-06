@@ -29,9 +29,9 @@ jobs:
         name: dist
         path: './dist'
     
-    - name: deploy
+    - name: Deploy
       uses: easingthemes/ssh-deploy@v2.1.2
-      with:
+      env:
         SSH_PRIVATE_KEY: ${{ secrets.ALIYUN }}
         ARGS: "-r1tgoDzvO --delete"
         SOURCE: "dist/"
