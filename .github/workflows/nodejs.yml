@@ -37,5 +37,5 @@ jobs:
           SOURCE: "dist"
           REMOTE_HOST: "39.102.68.192" # 服务器端公网ip地址
           REMOTE_USER: "root" # 服务器端用户名
-          TARGET: "/www/webapp/"
+          TARGET: "/www/webapp/" # 服务器目录
 
