@@ -30,7 +30,7 @@ jobs:
         env:
           CI: true
       - name: Deploy
-        uses: easingthemes/ssh-deploy@v2.0.9
+        uses: easingthemes/ssh-deploy@v2.1.0
         env:
           SSH_PRIVATE_KEY: ${{ secrets.ALIYUN }}
           ARGS: "-avz --delete" 
