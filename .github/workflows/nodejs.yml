@@ -30,7 +30,7 @@ jobs:
         env:
           CI: true
       - name: Deploy
-        uses: roles-ansible/check-ansible-centos-latest-action@master
+        uses: easingthemes/ssh-deploy@v2.0.8
         env:
           SSH_PRIVATE_KEY: ${{ secrets.ALIYUN }}
           ARGS: "-avz --delete" 
