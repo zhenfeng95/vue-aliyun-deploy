@@ -34,7 +34,7 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.ALIYUN }}
           ARGS: "-avz --delete" 
-          SOURCE: "dist"
+          SOURCE: "dist" # 打包文件名
           REMOTE_HOST: "39.102.68.192" # 服务器端公网ip地址
           REMOTE_USER: "root" # 服务器端用户名
           TARGET: "/www/webapp/" # 服务器目录
